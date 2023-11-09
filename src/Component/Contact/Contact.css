@@ -1,0 +1,68 @@
+.Contact_container{
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
+    background-color: rgb(209, 167, 249);
+}
+
+.Contact_detail_container{
+
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.Contact_container h2{
+    color: white;
+}
+
+.Social_icons a{
+    font-size: 2rem;
+    padding-right: 9px;
+    color: grey;
+}
+
+.icon_blue:hover{
+    color: blue;
+}
+
+.icon_black:hover{
+    color: black;
+}
+
+.Contact_rightCol p{
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.Contact_detail{
+    display: flex;
+    margin-bottom: -20px;
+}
+
+.Icon{
+    margin-top: 20px;
+
+}
+
+.Contact_detail p{
+    margin-left: 10px;
+}
+
+.CV_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.CV_container button{
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(250, 92, 92);
+    color: white;
+}
+
+

@@ -1,0 +1,32 @@
+.background_slide{
+    width: 100%;
+    height: 800px;
+}
+
+.heading_container h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 150px;
+    color: white;
+    padding-top: 17%;
+    
+}
+
+.heading_container p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+}
+
+@media screen and (max-width:540px) {
+    .background_slide{
+        height: 400px;
+    }
+    .heading_container h1{
+        font-size: 100px;
+    }
+}
