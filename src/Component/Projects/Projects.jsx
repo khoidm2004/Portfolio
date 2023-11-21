@@ -1,4 +1,3 @@
-import React from "react"
 import "./Projects.css"
 import NetFlexx from "../Image/Projects/NetFlexx.png"
 import QR from "../Image/Projects/QR.png"

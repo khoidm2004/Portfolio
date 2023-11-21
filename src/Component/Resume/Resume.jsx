@@ -1,12 +1,12 @@
-import React from "react"
 import "./Resume.css"
+
 import Python from "../Image/Skills/Python.png"
 import HTML from "../Image/Skills/HTML.png"
 import CSS from "../Image/Skills/CSS.png"
 import Js from "../Image/Skills/Js.png"
 import Ts from "../Image/Skills/Ts.png"
 import CPP from "../Image/Skills/CPP.png"
-import react from "../Image/Skills/react.png"
+import ReactLogo from "../Image/Skills/ReactLogo.png"
 import Vite from "../Image/Skills/Vite.png"
 import Node from "../Image/Skills/Node.png"
 import Selenium from "../Image/Skills/Selenium.png"
@@ -24,7 +24,7 @@ export default function Resume(){
                 </div>
                 <div className="Resume_rightCol">
                     <h2>LAB University of Applied Sciences</h2>
-                    <p>Bachelor's Degree Programme in Industrial Information Technology (2022 - Present)<br/>
+                    <p> Bachelor&apos;s Degree Programme in Industrial Information Technology (2022 - Present)<br/>
                     Major: DevOps Engineering - GPA: 4,27
                     </p>
                 </div>
@@ -59,19 +59,19 @@ export default function Resume(){
                 <div className="Resume_rightCol">
                     <h4>PROGRAMMING LANGUAGES AND TOOLS</h4>
                     <div className="Skills_img">
-                        <img className="Python" src={Python} />
-                        <img className="HTML" src={HTML} />
-                        <img className="CSS" src={CSS} />
-                        <img className="Js" src={Js} />
-                        <img className="Ts" src={Ts} />
-                        <img className="CPP" src={CPP} />
-                        <img className="react" src={react} /><br/>
-                        <img className="Vite" src={Vite} />
-                        <img className="Node" src={Node} />
-                        <img className="Mocha" src={Mocha} />
-                        <img className="Selenium" src={Selenium} />
-                        <img className="SQLite" src={SQLite} />
-                        <img className="Git" src={Git} />
+                        <img className="Python" src={Python} alt="Python"/>
+                        <img className="HTML" src={HTML} alt="HTML"/>
+                        <img className="CSS" src={CSS} alt="CSS"/>
+                        <img className="Js" src={Js} alt="Javascript"/>
+                        <img className="Ts" src={Ts} alt="Typescript"/>
+                        <img className="CPP" src={CPP} alt="C++"/>
+                        <img className="react" src={ReactLogo} alt="React Js"/><br/>
+                        <img className="Vite" src={Vite} alt="Vite Js"/>
+                        <img className="Node" src={Node} alt="Node Js"/>
+                        <img className="Mocha" src={Mocha} alt="Mocha/Chai"/>
+                        <img className="Selenium" src={Selenium} alt="Selenium"/>
+                        <img className="SQLite" src={SQLite} alt="SQLite"/>
+                        <img className="Git" src={Git} alt="Git"/>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,3 @@
-import React from "react"
 import "./Contact.css"
 import { FaFacebook, FaLinkedin, FaGithub,FaEnvelope,FaPhone,FaLocationArrow } from "react-icons/fa"
 import Khoi_Do_CV from "../CV/Khoi_Do_CV.pdf"
