@@ -49,6 +49,19 @@ export default function Resume() {
             </li>
             <br />
             <li>
+              Collaborating with cross-functional teams to implement responsive
+              design principles, improving the website's accessibility and
+              ensuring a consistent user interface across various devices.
+            </li>
+            <br />
+            <li>
+              Actively participated in code reviews, providing constructive
+              feedback and implementing best practices, contributing to the
+              overall code quality and fostering a collaborative development
+              environment.
+            </li>
+            <br />
+            <li>
               Technologies: React, Node, Typescript, JavaScript, Material-UI,
               Vite
             </li>
