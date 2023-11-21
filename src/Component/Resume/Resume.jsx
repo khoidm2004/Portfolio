@@ -24,9 +24,9 @@ export default function Resume(){
                 </div>
                 <div className="Resume_rightCol">
                     <h2>LAB University of Applied Sciences</h2>
-                    <p>Bachelor's Degree Programme in Industrial Information Technology (2022 - 2026)<br/>
+                    <p>Bachelor's Degree Programme in Industrial Information Technology (2022 - Present)<br/>
                     Major: DevOps Engineering - GPA: 4,27
-                    <br/>Present</p>
+                    </p>
                 </div>
             </div>
             <div className="Baseline"/>
