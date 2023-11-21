@@ -1,4 +1,5 @@
 Portfolio (Vite Js)
 
-Library used: react-icons, react-slideshow-image
+Building library: react-icons, react-slideshow-image  
+Checking + Formatting: Eslint, Prettier
  
