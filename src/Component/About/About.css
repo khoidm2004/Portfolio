@@ -1,62 +1,61 @@
-.About_container{
-    display: flex;
-    justify-content: space-between;
-    background-color: #D2E0FB;
+.About_container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #d2e0fb;
 }
 
-.About_container_leftCol{
-    flex-basis: 35%;
-    padding-left: 10%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+.About_container_leftCol {
+  flex-basis: 35%;
+  padding-left: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-.KD_img{
-    height: 400px;
-    width: 240px;
-    border-radius: 15px;
+.KD_img {
+  height: 400px;
+  width: 240px;
+  border-radius: 15px;
 }
 
-.About_container_rightCol{
-    flex-basis: 65%;
-    padding-top: 5%;
-    padding-right: 10%;
+.About_container_rightCol {
+  flex-basis: 65%;
+  padding-top: 5%;
+  padding-right: 10%;
 }
 
-.About_container_rightCol p{
-    font-size: 18px;
-    line-height: 2rem;
+.About_container_rightCol p {
+  font-size: 18px;
+  line-height: 2rem;
 }
 
-@media screen and (max-width:1171px) {
-    .About_container{
-        padding-bottom: 3rem;
-    }
+@media screen and (max-width: 1171px) {
+  .About_container {
+    padding-bottom: 3rem;
+  }
 }
 
-@media screen and (max-width:1000px) {
-    .About_container_leftCol{
-        padding-left: 2%;
-    }
-    .About_container_rightCol{
-        padding-right: 2%;
-    }
+@media screen and (max-width: 1000px) {
+  .About_container_leftCol {
+    padding-left: 2%;
+  }
+  .About_container_rightCol {
+    padding-right: 2%;
+  }
 }
 
-@media screen and (max-width:780px) {
-    .About_container{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .About_container_rightCol{
-        padding-top:0;
-        padding-right: 5%;
-        padding-left: 5%;
-    }
-    .About_container_rightCol p{
-        font-size: 17px;
-        line-height: 1.5rem;
-    }
+@media screen and (max-width: 780px) {
+  .About_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .About_container_rightCol {
+    padding-top: 0;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  .About_container_rightCol p {
+    font-size: 17px;
+    line-height: 1.5rem;
+  }
 }
-
