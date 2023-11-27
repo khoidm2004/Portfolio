@@ -1,4 +1,4 @@
-import { motion, useAnimation, useScroll } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import "./App.css";
 
 import About from "./Component/About/About";
