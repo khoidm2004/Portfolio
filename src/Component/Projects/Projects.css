@@ -16,6 +16,7 @@
 .Projects_img {
   position: relative;
   border-radius: 10px;
+  transition: transform 0.5s ease;
 }
 
 .NetFlexx {
@@ -29,6 +30,5 @@
 }
 
 .Projects_img:hover {
-  transform: scale(1.04, 1.04);
-  transition: 0.5s;
+  transform: scale(1.04);
 }

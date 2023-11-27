@@ -68,4 +68,9 @@
   background-color: rgb(250, 92, 92);
   color: white;
   border: none;
+  transition: transform 0.5s ease;
+}
+
+.CV_container button:hover {
+  transform: scale(1.1);
 }

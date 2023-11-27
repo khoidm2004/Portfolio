@@ -50,7 +50,7 @@ export default function Resume() {
             <br />
             <li>
               Collaborating with cross-functional teams to implement responsive
-              design principles, improving the website's accessibility and
+              design principles, improving the website&apos;s accessibility and
               ensuring a consistent user interface across various devices.
             </li>
             <br />
