@@ -5,16 +5,4 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
-}
-
-.progress_bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 7px;
-  background: #363062;
-  transform-origin: 0%;
-  z-index: 1000;
 }
