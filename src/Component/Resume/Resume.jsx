@@ -13,6 +13,7 @@ import Selenium from "../Image/Skills/Selenium.png";
 import SQLite from "../Image/Skills/SQLite.png";
 import Git from "../Image/Skills/Git.png";
 import Mocha from "../Image/Skills/Mocha.png";
+import MySQL from "../Image/Skills/MySQL.png";
 
 export default function Resume() {
   return (
@@ -88,6 +89,7 @@ export default function Resume() {
               <img className="Mocha" src={Mocha} alt="Mocha/Chai" />
               <img className="Selenium" src={Selenium} alt="Selenium" />
               <img className="SQLite" src={SQLite} alt="SQLite" />
+              <img className="MySQL" src={MySQL} alt="MySQL" />
               <img className="Git" src={Git} alt="Git" />
             </div>
           </div>
