@@ -30,7 +30,7 @@ export default function Resume() {
               Bachelor&apos;s Degree Programme in Industrial Information
               Technology (2022 - Present)
               <br />
-              Major: DevOps Engineering - GPA: 4,27
+              Major: Industrial Information Technology - GPA: 4,54
             </p>
           </div>
         </div>
