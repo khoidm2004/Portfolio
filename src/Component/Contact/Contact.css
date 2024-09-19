@@ -74,3 +74,15 @@
 .CV_container button:hover {
   transform: scale(1.1);
 }
+
+@media screen and (max-width:430px) {
+  .Contact_detail_container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Contact_rightCol{
+    margin-top: -50px;
+  }
+}

@@ -1,5 +1,5 @@
 import "./Contact.css";
-import Khoi_Do_CV from "../CV/Khoi_Do_CV.pdf";
+import Khoi_Do_CV from "../CV/Khoi Do_CV.pdf";
 
 import {
   FaFacebook,
