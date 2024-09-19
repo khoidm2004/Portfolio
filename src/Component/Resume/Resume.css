@@ -104,6 +104,11 @@
   margin-right: 8px;
 }
 
+.Jest {
+  height: 70px;
+  margin-right: 8px;
+}
+
 .SQLite {
   height: 73px;
   width: 78px;
@@ -114,6 +119,12 @@
   height: 73px;
   width: 78px;
   margin-right: 15px;
+}
+
+.Firebase {
+  height: 75px;
+  width: 75px;
+  margin-right: 8px;
 }
 
 .Git {
@@ -166,7 +177,7 @@
     margin-left: -6px;
     margin-right: 0;
   }
-
+  
   .SQLite {
     margin-left: -6px;
     margin-right: 0;
@@ -181,17 +192,21 @@
     align-items: center;
     text-align: center;
   }
+
   .Resume_leftCol {
     padding-left: 0;
   }
+
   .Resume_rightCol {
     padding-right: 2%;
     padding-left: 2%;
   }
+
   .Resume_rightCol p {
     line-height: 1.75rem;
     font-size: 17px;
   }
+
   .Resume_rightCol li {
     line-height: 1.5rem;
     font-size: 17px;
