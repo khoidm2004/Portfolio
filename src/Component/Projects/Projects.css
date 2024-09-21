@@ -1,6 +1,7 @@
 .Projects_container {
   padding-top: 3rem;
   padding-bottom: 3rem;
+
 }
 
 .Projects_container h2 {
@@ -8,27 +9,21 @@
   padding-left: 10%;
 }
 
-.Projects_link_container {
-  display: flex;
-  padding-top: 2.5rem;
+.Projects_link_container{
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
-.Projects_img {
-  position: relative;
-  border-radius: 10px;
-  transition: transform 0.5s ease;
+.Projects_link_container li a{
+  text-decoration: none;
 }
 
-.NetFlexx {
-  display: flex;
-  justify-content: center;
+.Projects_link_container li a img{
+  padding-left: 10%;
 }
 
-.QR {
-  display: flex;
-  justify-content: center;
-}
-
-.Projects_img:hover {
-  transform: scale(1.04);
+.Projects_link_container h4{
+  padding-left: 12%;
+  font-size: 30px;
+  color: bisque;
 }

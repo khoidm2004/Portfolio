@@ -1,45 +1,58 @@
-import "./Projects.css";
 import NetFlexx from "../Image/Projects/NetFlexx.png";
 import QR from "../Image/Projects/QR.png";
+import Piacom from "../Image/Projects/Piacom.png";
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
+import "./Projects.css";
 
 export default function Projects() {
   const image = {
     url: "https://i.pinimg.com/564x/4c/cc/8b/4ccc8bb1d5341177cae1b8e52cdd9b68.jpg",
   };
 
+  const projects = [
+    {
+      url: "https://petrol-store-management-webapp.vercel.app/auth",
+      image: Piacom,
+      description: "Petrol Store Management Web Application ⛽",
+    },
+    {
+      url: "https://qr-code-generator-cjtj.vercel.app/",
+      image: QR,
+      description: "QR Code Generator",
+    },
+    {
+      url: "https://net-flexx-khoidm2004.vercel.app/",
+      image: NetFlexx,
+      description: "Movie Streaming Website",
+    },
+  ];
   return (
     <>
       <div
         className="Projects_container"
         id="Projects"
-        style={{ backgroundImage: `url(${image.url})` }}
+        style={{
+          backgroundImage: `url(${image.url})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
       >
         <h2>Check out my projects:</h2>
         <div className="Projects_link_container">
-          <a
-            className="NetFlexx"
-            href="https://net-flexx-khoidm2004.vercel.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              className="Projects_img"
-              src={NetFlexx}
-              style={{ width: "90%", height: "90%", objectFit: "cover" }}
-            />
-          </a>
-          <a
-            className="QR"
-            href="https://qr-code-generator-cjtj.vercel.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              className="Projects_img"
-              src={QR}
-              style={{ width: "90%", height: "90%", objectFit: "cover" }}
-            />
-          </a>
+          <Slide autoplay={true} duration={2000} pauseOnHover={true}>
+            {projects.map((project, index) => (
+              <li key={index}>
+                <a href={project.url} target="_blank" rel="noreferrer">
+                  <img
+                    src={project.image}
+                    style={{ width: "40%", height: "40%", objectFit: "cover" }}
+                  />
+                  <h4>{project.description}</h4>
+                </a>
+              </li>
+            ))}
+          </Slide>
         </div>
       </div>
     </>
