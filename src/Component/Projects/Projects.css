@@ -9,21 +9,37 @@
   padding-left: 10%;
 }
 
-.Projects_link_container{
+.Projects_link_container {
   padding-top: 3%;
   padding-bottom: 3%;
 }
 
-.Projects_link_container li a{
+.Projects_link_container li a {
   text-decoration: none;
 }
 
-.Projects_link_container li a img{
+.Projects_link_container li a img {
   padding-left: 10%;
 }
 
-.Projects_link_container h4{
+.Projects_link_container h4 {
   padding-left: 12%;
   font-size: 30px;
   color: bisque;
+}
+
+@media screen and (max-width: 1000px) {
+  .Projects_link_container h4 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Projects_container h2 {
+    font-size: 20px;
+  }
+
+  .Projects_link_container h4 {
+    font-size: 20px;
+  }
 }
