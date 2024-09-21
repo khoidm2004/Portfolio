@@ -2,6 +2,16 @@ import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import "./AutoSlider.css";
 
+const arrowStyle = {
+  display: "none",
+};
+
+const properties = {
+  prevArrow: <button style={{...arrowStyle}}/>,
+  nextArrow: <button style={{...arrowStyle}}/>
+
+}
+
 export default function AutoSlider() {
   const images = [
     { url: "https://images2.alphacoders.com/253/2532.jpg" },
@@ -12,7 +22,7 @@ export default function AutoSlider() {
   return (
     <>
       <div className="AutoSlider_container">
-        <Fade duration={4000}>
+        <Fade duration={1000} {...properties}>
           {images.map((image, index) => (
             <div
               key={index}
