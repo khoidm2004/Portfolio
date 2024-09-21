@@ -22,7 +22,7 @@ export default function AutoSlider() {
   return (
     <>
       <div className="AutoSlider_container">
-        <Fade duration={1000} {...properties}>
+        <Fade duration={1000} {...properties} autoplay={true}>
           {images.map((image, index) => (
             <div
               key={index}
