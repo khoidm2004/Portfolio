@@ -31,7 +31,7 @@ export default function AutoSlider() {
             >
               <div className="heading_container">
                 <h1>Khoi Do</h1>
-                <p>Software Engineering</p>
+                <p>Software Engineer</p>
               </div>
             </div>
           ))}

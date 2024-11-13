@@ -32,7 +32,7 @@ export default function Resume() {
               Bachelor&apos;s Degree Programme in Industrial Information
               Technology (2022 - 2026)
               <br />
-              Major: Industrial Information Technology - GPA: 4,54
+              Major: Internet of Things - GPA: 4,54
             </p>
           </div>
         </div>
