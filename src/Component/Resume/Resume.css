@@ -90,6 +90,7 @@
 .Node {
   height: 60px;
   width: 80px;
+  margin-right: 10px;
 }
 
 .Mocha {
@@ -106,19 +107,18 @@
 
 .Jest {
   height: 70px;
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 .SQLite {
   height: 73px;
   width: 78px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .MySQL {
   height: 73px;
   width: 78px;
-  margin-right: 15px;
 }
 
 .Firebase {
@@ -130,6 +130,17 @@
 .Git {
   height: 70px;
   width: 70px;
+  margin-right: 8px;
+}
+
+.Azure {
+  height: 70px;
+  width: 90px;
+}
+
+.R_Pico {
+  height: 70px;
+  width: 90px;
 }
 
 @media screen and (max-width: 1043px) {
@@ -177,7 +188,7 @@
     margin-left: -6px;
     margin-right: 0;
   }
-  
+
   .SQLite {
     margin-left: -6px;
     margin-right: 0;
