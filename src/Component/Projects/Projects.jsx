@@ -26,6 +26,30 @@ export default function Projects() {
       image: NetFlexx,
       description: "Movie Streaming Website",
     },
+    {
+      type: "video",
+      description: "PLC Programming: Conveyor Controller",
+      width: "746",
+      height: "400",
+      src: "https://www.youtube.com/embed/0fj9uW13SDU",
+      title: "Conveyer Controller",
+      frameborder: "0",
+      allow:
+        "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
+      referrerpolicy: "strict-origin-when-cross-origin",
+    },
+    {
+      type: "video",
+      description: "PLC Programming: Conveyor Controller With Counter",
+      width: "746",
+      height: "400",
+      src: "https://www.youtube.com/embed/j67YYtiAQRc",
+      title: "Conveyer Controller",
+      frameborder: "0",
+      allow:
+        "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
+      referrerpolicy: "strict-origin-when-cross-origin",
+    },
   ];
   return (
     <>
@@ -43,13 +67,36 @@ export default function Projects() {
           <Slide autoplay={true} duration={2000} pauseOnHover={true}>
             {projects.map((project, index) => (
               <li key={index}>
-                <a href={project.url} target="_blank" rel="noreferrer">
-                  <img
-                    src={project.image}
-                    style={{ width: "40%", height: "40%", objectFit: "cover" }}
-                  />
-                  <h4>{project.description}</h4>
-                </a>
+                {project.type === "video" ? (
+                  <div>
+                    <iframe
+                      style={{
+                        marginLeft: "10%",
+                      }}
+                      width={project.width}
+                      height={project.height}
+                      src={project.src}
+                      title={project.title}
+                      frameborder={project.frameborder}
+                      allow={project.allow}
+                      referrerpolicy={project.referrerpolicy}
+                      allowfullscreen
+                    />
+                    <h4>{project.description}</h4>
+                  </div>
+                ) : (
+                  <a href={project.url} target="_blank" rel="noreferrer">
+                    <img
+                      src={project.image}
+                      style={{
+                        width: "40%",
+                        height: "40%",
+                        objectFit: "cover",
+                      }}
+                    />
+                    <h4>{project.description}</h4>
+                  </a>
+                )}
               </li>
             ))}
           </Slide>
