@@ -50,6 +50,18 @@ export default function Projects() {
         "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
       referrerpolicy: "strict-origin-when-cross-origin",
     },
+    {
+      type: "video",
+      description: "Humidity Data Collection IoT System",
+      width: "746",
+      height: "400",
+      src: "https://www.youtube.com/embed/FhHddqXZUsI",
+      title: "Introduction to the Humidity Data Collection IoT System",
+      frameborder: "0",
+      allow:
+        "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
+      referrerpolicy: "strict-origin-when-cross-origin",
+    },
   ];
   return (
     <>
