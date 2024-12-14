@@ -62,6 +62,18 @@ export default function Projects() {
         "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
       referrerpolicy: "strict-origin-when-cross-origin",
     },
+    {
+      type: "video",
+      description: "Brick Wall Shooting Game (C# + Unity)",
+      width: "746",
+      height: "400",
+      src: "https://www.youtube.com/embed/KbQw87Tvie8",
+      title: "Brick wall Task using c# and Unity",
+      frameborder: "0",
+      allow:
+        "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
+      referrerpolicy: "strict-origin-when-cross-origin",
+    },
   ];
   return (
     <>
