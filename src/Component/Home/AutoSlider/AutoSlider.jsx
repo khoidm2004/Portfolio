@@ -7,10 +7,9 @@ const arrowStyle = {
 };
 
 const properties = {
-  prevArrow: <button style={{...arrowStyle}}/>,
-  nextArrow: <button style={{...arrowStyle}}/>
-
-}
+  prevArrow: <button style={{ ...arrowStyle }} />,
+  nextArrow: <button style={{ ...arrowStyle }} />,
+};
 
 export default function AutoSlider() {
   const images = [
