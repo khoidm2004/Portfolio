@@ -16,18 +16,37 @@
   color: white;
 }
 
+.Social_icons {
+  display: flex;
+  gap: 15px;
+}
+
 .Social_icons a {
   font-size: 2rem;
-  padding-right: 9px;
   color: grey;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.Social_icons a:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .icon_blue:hover {
   color: blue;
+  background-color: rgba(0, 119, 181, 0.2);
 }
 
 .icon_black:hover {
   color: black;
+  background-color: rgba(51, 51, 51, 0.2);
 }
 
 .Contact_rightCol p {
@@ -37,11 +56,16 @@
 
 .Contact_detail {
   display: flex;
-  margin-bottom: -20px;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .Icon {
-  margin-top: 20px;
+  transition: transform 0.3s ease;
+}
+
+.Contact_detail:hover .Icon {
+  transform: rotate(360deg);
 }
 
 .Contact_detail p {
@@ -68,21 +92,22 @@
   background-color: rgb(250, 92, 92);
   color: white;
   border: none;
-  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, background-color 0.3s ease;
 }
 
 .CV_container button:hover {
   transform: scale(1.1);
+  background-color: rgb(220, 70, 70);
 }
 
-@media screen and (max-width:430px) {
-  .Contact_detail_container{
+@media screen and (max-width: 430px) {
+  .Contact_detail_container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .Contact_rightCol{
+  .Contact_rightCol {
     margin-top: -50px;
   }
 }
