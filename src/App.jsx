@@ -1,6 +1,7 @@
 import { motion, useScroll } from "framer-motion";
 import Headroom from "react-headroom";
 import React, { Suspense } from "react";
+import LoadingPage from "./LoadingPage/LoadingPage";
 
 import "./App.css";
 
@@ -17,7 +18,7 @@ function App() {
   return (
     <>
       <div>
-        <Suspense>
+        <Suspense fallback={<LoadingPage />}>
           <Headroom downTolerance={100}>
             <NavBar1 />
           </Headroom>
