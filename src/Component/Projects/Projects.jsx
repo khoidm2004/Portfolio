@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import NetFlexx from "../Image/Projects/NetFlexx.png";
 import QR from "../Image/Projects/QR.png";
 import Piacom from "../Image/Projects/Piacom.png";
@@ -6,6 +7,23 @@ import "react-slideshow-image/dist/styles.css";
 import "./Projects.css";
 
 export default function Projects() {
+  const [iframeSize, setIframeSize] = useState({ width: 746, height: 400 });
+
+  useEffect(() => {
+    const updateSize = () => {
+      if (window.innerWidth < 768) {
+        setIframeSize({ width: window.innerWidth * 0.9, height: 200 });
+      } else {
+        setIframeSize({ width: 746, height: 400 });
+      }
+    };
+
+    updateSize();
+    window.addEventListener("resize", updateSize);
+
+    return () => window.removeEventListener("resize", updateSize);
+  }, []);
+
   const image = {
     url: "https://i.pinimg.com/564x/4c/cc/8b/4ccc8bb1d5341177cae1b8e52cdd9b68.jpg",
   };
@@ -29,8 +47,6 @@ export default function Projects() {
     {
       type: "video",
       description: "PLC Programming: Conveyor Controller",
-      width: "746",
-      height: "400",
       src: "https://www.youtube.com/embed/0fj9uW13SDU",
       title: "Conveyer Controller",
       frameborder: "0",
@@ -41,8 +57,6 @@ export default function Projects() {
     {
       type: "video",
       description: "PLC Programming: Conveyor Controller With Counter",
-      width: "746",
-      height: "400",
       src: "https://www.youtube.com/embed/j67YYtiAQRc",
       title: "Conveyer Controller",
       frameborder: "0",
@@ -53,8 +67,6 @@ export default function Projects() {
     {
       type: "video",
       description: "Humidity Data Collection IoT System",
-      width: "746",
-      height: "400",
       src: "https://www.youtube.com/embed/FhHddqXZUsI",
       title: "Introduction to the Humidity Data Collection IoT System",
       frameborder: "0",
@@ -65,8 +77,6 @@ export default function Projects() {
     {
       type: "video",
       description: "Brick Wall Shooting Game (C# + Unity)",
-      width: "746",
-      height: "400",
       src: "https://www.youtube.com/embed/KbQw87Tvie8",
       title: "Brick wall Task using C# and Unity",
       frameborder: "0",
@@ -97,14 +107,14 @@ export default function Projects() {
                       style={{
                         marginLeft: "10%",
                       }}
-                      width={project.width}
-                      height={project.height}
+                      width={iframeSize.width}
+                      height={iframeSize.height}
                       src={project.src}
                       title={project.title}
                       frameborder={project.frameborder}
                       allow={project.allow}
                       referrerpolicy={project.referrerpolicy}
-                      allowfullscreen
+                      allowFullscreen
                     />
                     <h4>{project.description}</h4>
                   </div>
