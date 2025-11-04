@@ -28,7 +28,7 @@ export default function Contact() {
               </a>
               <a
                 className="icon_blue"
-                href="https://www.linkedin.com/in/minh-khoi-do-827525253/"
+                href="https://www.linkedin.com/in/khoi-do04/"
                 target="_blank"
                 rel="noreferrer"
               >
